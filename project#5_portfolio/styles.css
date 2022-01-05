@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+html,body{
+  margin: 0 auto;
+
+}
+#welcome-section{
+  background-color: purple;
+  height: 550px;
+  text-align: center;
+  padding-top: 5em;
+  color: white;
+  padding-top: 20%;
+}
+#projects{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-gap: 50px;
+  text-align: center;
+  margin: 5%;
+
+}
+a{
+  text-decoration: none;
+}
+.portofolio_project{
+    width: 300px;
+    height:300px;
+    border-radius: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    text-align: center;
+    align-items: center;
+    margin: 4%;
+
+}
+
+#header-projects{
+  text-align: center;
+  padding: 3%;
+  margin-top: 12%;
+  letter-spacing: 10px;
+  font-family: 'Luckiest Guy'
+}
+.portofolio_project a p{
+  font-size: large;
+  font-size: 1.4rem;
+  color: black;
+
+}
+
+.portofolio_project:hover{
+  width: 288px;
+  height:288px;
+}
+
+.project-tile{
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.portofolio_project svg{
+  vertical-align: middle;
+    max-width: 71px;
+    top: 109px;
+    position: relative;
+    color: purple;
+    letter-spacing: 2;
+}
+span{
+  position: relative;
+      bottom: -105px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+}
+#navbar{
+  position: relative;
+}
+#navbar svg{
+      width: 58px;
+      top: 2px;
+      left: 31px;
+      position: relative;
+      padding-top: 14px;
+      padding-bottom: 23px;
+      cursor: pointer;
+}
+.menu,
+#navbar a
+{
+  font-size: 23px;
+  list-style: none;
+  text-transform: capitalize;
+  color: white;
+  border-radius: 12px;
+
+}
+#navbar a:hover{
+  color:blue;
+  font-size: 28px;
+}
+.menu{
+  z-index: 23;
+  width: 220px;
+  height: 200px;
+  position: absolute;
+  top: 23px;
+  left: 95px;
+  display: none;
+  background: #111112a3;
+  line-height: 2;
+
+}
+#navbar:hover .menu{
+  display: block;
+}
+
+
+#contacts svg{
+  width: 40px;
+}
+
+.contacts-item{
+  float: left;
+  list-style: none;
+
+}
+#contacts ul li{
+  font-size: 23px;
+  margin-bottom:2%;
+  color: #f1f1f1;
+}
+#contacts a{
+  color: #f1f1f1d4;
+}
+
+
+#header-contacts{
+margin-right: 2%;
+color: #ffffff96;
+}
+footer{
+  background-color: purple;
+  padding: 3%;
+
+}
+footer p{
+  position: relative;
+    bottom: -43px;
+    right: 550px;
+    color: #ffffff96;
+
+}
+
+
+
+@media only screen and (max-width:860px){
+
+section#projects{
+display: block;
+margin: 5%;
+max-height: auto;
+max-width: 100%;
+}
+.portofolio_project{
+  margin-bottom: 90px;
+  margin: 0 auto;
+  margin-top: 15%;
+    margin-bottom: 3%;
+}
+
+#contacts{
+position: absolute;
+top: 466px;
+}
+footer p{
+position: relative;
+bottom: 0;
+right: 0;
+}
+
+}

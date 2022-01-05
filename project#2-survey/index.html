@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Travel Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Travel Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+
+
+    <form id="survey-form" action="index.html" method="post">
+        <label for="Name">Name(2 to 10 letters)</label>
+        <input type="text" name="name" minlength="2" class="form-input" size="10" placeholder="ex.Jonh"required><br>
+        <label for="Lastname">Lastname:</label>
+        <input type="Lastname"  minlength="2" class="form-input"placeholder="ex.Smith"required><br>
+          <label for="email">Email:</label>
+          <input id="email" type="email"class="form-input" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"  placeholder="yourEmail@something.com" required><br>
+
+          <label for="number">Age(optional)</label>
+          <input id="number" type="number" class="form-input" min="0" max="100" placeholder="Age">
+
+          <label for="">What kind of holidays to you prefer ?</label>
+          <select id="dropdown" class="form-input" placeholder="Type_of_holidays">
+                <option value="">Hotel</option>
+                <option value="">Cambing</option>
+                <option value="">Luxury</option>
+                <option value="">Vancation</option>
+                <option value="">With a group</option>
+                <option value="">Visiting Friends</option>
+          </select>
+          <form class="" action="index.html" method="post">
+                <p>What is your marital status? (Select one)</p>
+                <label for="single">
+                <input type="radio" name="marital_status" value="1">Single</label>
+                <label for="partener_or_married">
+                <input type="radio" name="marital_status" value="1">Living with Partner or Married</label>
+                <label for="kids">
+                <input type="radio" name="marital_status" value="1">With Kids</label>
+
+                <label for="story">I would greatly appreciate it if you kindly give me some feedback...</label>
+                <textarea id="feedback" name="feedback" maxlength="500"
+                rows="10" cols="50">
+                </textarea>
+                <input id="submit_btn" type="submit" value="Submit">
+          </form>
+
+    </form>
+
+    <footer><span>&copy Created by me </span></footer>
+  </body>
+</html>
