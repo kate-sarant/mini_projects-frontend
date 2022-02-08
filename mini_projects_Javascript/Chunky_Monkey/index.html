@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chunky Monkey</title>
+  </head>
+  <body>
+    <script>
+
+      function chunkArrayInGroups(arr, size) {
+        let myarr = [];
+        while (arr.length > 0) {
+          myarr.push(arr.splice(0, size));
+        }
+        return myarr;
+      }
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+    </script>
+  </body>
+</html>
