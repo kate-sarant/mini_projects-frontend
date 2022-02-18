@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>fibonacci_calculator</title>
+
+</head>
+<body>
+      <header>
+      </header>
+
+      <main>
+
+      </main>
+
+
+      <footer>
+      </footer>
+
+      <script>
+
+      function fibo(n){
+            let  a = 0 ;
+            let  b = 1 ;
+            let fib_nums = [];
+
+          if (n == 1){
+            return  fib_nums.push(0)
+              }
+          else if (n == 0){
+              return fib_nums;
+          }else{
+            if(n >= 2){
+            let fib_nums = [0, 1,];
+              for(let i = 2; i<= n; i++){
+                // console.log(i, "fib_nums[i-1]:", fib_nums[i-1])
+                fib_nums.push(fib_nums[i-1]+fib_nums[i-2])
+
+              }
+          return fib_nums
+               for (let i=0; i< fib_nums; i++){
+                      return fib_nums
+                      }
+                return fib_nums
+            }
+            return fib_nums
+            }
+
+        }
+      console.log(fibo(14))
+
+      </script>
+
+</body>
+
+</html>
