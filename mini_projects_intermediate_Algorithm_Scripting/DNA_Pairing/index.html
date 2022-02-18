@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mini projects</title>
+  </head>
+  <body>
+
+    <!-- A-T
+    C-G -->
+
+    <script>
+        function pairElement(str) {
+          const result=[]
+          for(let i= 0; i<str.length;i++)
+            result.push([str[i]])
+          for(let k = 0; k < str.length; k ++){
+            if(str[k] == "G"){
+              result[k].push("C")
+            }
+            if(str[k] == "C"){
+              result[k].push("G")
+            }
+            if(str[k] == "A"){
+              result[k].push("T")
+            }
+            if(str[k] == "T"){
+              result[k].push("A")
+            }
+
+          }
+
+            return result;
+        }
+
+        console.log(pairElement("ACGT"));
+          // [["G","C"],["C","G"],["G","C"]]
+    </script>
+
+  </body>
+</html>
