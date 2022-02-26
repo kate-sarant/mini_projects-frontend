@@ -14,7 +14,7 @@ const $yesterday =time.getUTCFullYear()+ "-" +time.getMonth() + "-" +(time.getDa
 
 
 const topList = document.querySelector('.top');
-const apiKey = '1b2318211fa74799932c19caf20343c5'
+const apiKey = 'API KEY HERE'
 
  //// news api main page
 let url =`https://newsapi.org/v2/top-headlines?country=gr&apiKey=${apiKey}`
