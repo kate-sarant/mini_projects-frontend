@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mini projects</title>
+  </head>
+  <body>
+<script type="text/javascript">
+
+
+
+function rot13(str) {
+  let box = []
+  for(let i = 0; i<str.length; i++){
+    var k = str.charCodeAt(i)
+    box.push(k)
+
+}
+
+for (let i=0; i< box.length;i++){
+
+    let countTo13 = 1;
+    let char = box[i]
+
+      while(countTo13 < 14 ){
+        if(char == 90){
+          char = 64
+        }
+        if(char < 64){
+          char--
+        }
+        ++char
+        ++countTo13 ;
+      }
+      box[i] = char
+  }
+
+    let answer =[];
+    for(let i=0 ;i< box.length; i++){
+       answer.push( String.fromCharCode(box[i]))
+
+    }
+
+    return answer.join('').replace("-"," ")
+}
+
+
+
+
+rot13("SERR CVMMN!");
+
+
+</script>
+  </body>
+</html>

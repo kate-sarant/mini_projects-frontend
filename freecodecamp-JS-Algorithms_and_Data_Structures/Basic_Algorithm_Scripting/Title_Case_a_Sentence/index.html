@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Title_Case_a_Sentence</title>
+  </head>
+  <body>
+
+
+      <script>
+
+          function titleCase(str) {
+          return str
+            .toLowerCase()
+            .replace(/(^|\s)\S/g, L => L.toUpperCase());
+  }
+            console.log(titleCase("the dog is happy"))
+
+
+      </script>
+
+  </body>
+</html>

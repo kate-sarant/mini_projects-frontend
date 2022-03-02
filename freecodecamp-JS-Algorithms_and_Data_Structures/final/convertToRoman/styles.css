@@ -1,0 +1,53 @@
+
+    button{
+    margin:2%;
+    }
+
+    section{
+    width: 500px;
+    position: relative;
+    top: 154px;
+    }
+
+    label{
+    font-family: 'Luxurious Roman', cursive;
+    position: relative;
+    top: -43px;
+    font-size: 31px;
+    }
+    /* ======== answear container =====*/
+    p#fah{
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 31px;
+    position: relative;
+    top:20px;
+    }
+    /* ======== tables section ========*/
+    .tables_div{
+      position: relative;
+      top: 327px;
+      border-style: solid;
+      border-color: #96c0fe;
+      margin-left: 31%;
+      max-width: 800px;
+      }
+      .example{
+        text-align: center;
+        position: relative;
+        top: 479px;
+        font-family: 'Luxurious Roman', cursive;
+        font-size: 31px;
+      }
+
+      .for_M p{
+        text-align: center;
+        background-color: #0d6efd6e;
+      }
+      span{
+        font-size: 21px;
+      }
+
+      footer{
+      position: absolute;
+      bottom: -419px;
+      }

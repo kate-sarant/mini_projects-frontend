@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mini projects</title>
+  </head>
+  <body>
+
+    <script>
+
+    function smallestCommons(arr) {
+
+      arr = arr.sort( function(a, b) {
+        return a - b
+    })
+    let small = arr[0]
+    let big = arr[1]
+    let comMult = big;
+    while(true){
+      let isCoMul = true;
+          for(let i = small; i<= big; i++){
+            if(comMult %i!==0){
+              isCoMul = false;
+              break;
+            }
+          }
+          if(isCoMul){
+            return comMult;
+          }else{
+            comMult ++
+          }
+    }
+    }
+    console.log(smallestCommons([1,5]));
+
+
+
+
+    </script>
+
+  </body>
+</html>

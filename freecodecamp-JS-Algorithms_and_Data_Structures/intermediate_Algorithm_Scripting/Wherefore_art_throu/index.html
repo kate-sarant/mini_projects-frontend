@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mini_projects</title>
+  </head>
+  <body>
+
+    <script>
+      "use strict";
+
+      function whatIsInAName(collection, source) {
+        var srcKeys = Object.keys(source);
+      
+       return collection.filter(function(obj) {
+          return srcKeys.every(function(key) {
+            return obj.hasOwnProperty(key) && obj[key] === source[key];
+          });
+        });
+      }
+
+
+
+
+console.log(whatIsInAName([{ first: "Romeo", last: "Montague" },
+ { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }],
+  { last: "Capulet" }));
+    </script>
+
+  </body>
+</html>
+<!-- function getRating(watchList) {
+
+  let averageRating =
+watchList.map(movie => ({
+  title: movie['Title'],
+  director: movie["Director"],
+  rating:movie['imdbRating']}))
+  .filter(i => i.director  == "Christopher Nolan");
+  const reduced = averageRating.reduce((a ,movie) => a+ Number(movie.rating)/averageRating.length,0);
+
+
+  return reduced;
+} -->

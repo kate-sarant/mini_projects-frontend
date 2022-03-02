@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mini project</title>
+  </head>
+  <body>
+<!--
+    Find the missing letter in the passed letter range and return it.
+
+    If all letters are present in the range, return undefined. -->
+
+
+    <script>
+
+    function fearNotLetter(str) {
+      let alpha = "abcdefghijklmnopqrstuvwxyz";
+      let alphabet = []
+      for(let j = 0; j< alpha.length; j++){
+        alphabet.push(alpha[j])
+      }
+      if (alphabet.length == str.length){
+        let result = undefined;
+        return result
+      }else{
+          const start  =alphabet.indexOf(str[0])
+          let end = (str.length)-1
+          const stop  = alphabet.indexOf(str[end])
+          const finish = alphabet.slice(start,stop)
+
+
+          let result = finish.filter(item => !finish.includes(item) || !str.includes(item))
+          result = String(result)
+          return  result
+    }
+    return result
+  }
+
+
+    console.log(fearNotLetter("abcdefghijklmnopqrstuvwxyz"));
+
+    </script>
+  </body>
+</html>
