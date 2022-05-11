@@ -1,5 +1,5 @@
 # mini_projects-frontend
 
-Mini projects for begginers. 
-html javaScripe css php and responsice design.
-Hope you enjoy... 
+Mini projects for beginners.
+Languages: html,css Javascript, php and responsive design.
+ Hope you enjoy...
